@@ -59,6 +59,25 @@ main (Production)
 
 ---
 
+## Pre-Release Versions
+
+### Alpha (α)
+- Unstable features
+- Format: `v1.0.0-alpha.1`
+- Use for: Early testing
+
+### Beta (β)
+- Feature-complete
+- Format: `v1.0.0-beta.1`
+- Use for: User feedback
+
+### Release Candidate (RC)
+- Final testing
+- Format: `v1.0.0-rc.1`
+- Use for: Production readiness
+
+---
+
 ## Release Checklist
 
 ### Before Release
@@ -85,6 +104,32 @@ main (Production)
 
 ---
 
+## Changelog Format
+
+```markdown
+## [1.0.0] - 2024-06-08
+
+### Added
+- New feature description
+
+### Changed
+- Changed behavior description
+
+### Deprecated
+- Deprecated feature description
+
+### Removed
+- Removed feature description
+
+### Fixed
+- Bug fix description
+
+### Security
+- Security fix description
+```
+
+---
+
 ## Support Policy
 
 | Version | Release Date | End of Life | Status |
@@ -92,6 +137,63 @@ main (Production)
 | 1.0.x   | 2024-06-08   | 2026-06-08 | Active |
 | 0.9.x   | 2024-01-01   | 2025-06-08 | LTS    |
 | < 0.9   | 2023-xx-xx   | 2024-01-01 | EOL    |
+
+**LTS (Long-Term Support)** - 2 years of security updates  
+**Active** - Current release with all updates  
+**EOL** - End of Life, no support
+
+---
+
+## Hotfix Process
+
+For critical production bugs:
+
+1. Create `hotfix/issue-name` from `main`
+2. Fix the bug and increment PATCH version
+3. Test thoroughly
+4. Merge to `main` with tag
+5. Merge back to `develop`
+6. Deploy immediately
+
+---
+
+## Dependency Management
+
+- Update dependencies monthly
+- Use `npm audit fix` for vulnerabilities
+- Review breaking changes before updating
+- Test with new versions before releasing
+
+---
+
+## Communication
+
+**Release Announcements:**
+- GitHub Releases
+- Twitter (@VoxtrynAI)
+- Email newsletter
+- LinkedIn
+
+**Format:**
+```
+🚀 VoxtrynAI v1.0.0 Released!
+
+✨ New Features:
+- Feature 1
+- Feature 2
+
+🐛 Bug Fixes:
+- Fix 1
+- Fix 2
+
+📖 Changelog: [link]
+```
+
+---
+
+## Questions?
+
+Contact: **release@voxtrynai.com**
 
 ---
 
